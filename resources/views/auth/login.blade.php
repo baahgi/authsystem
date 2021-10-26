@@ -44,10 +44,10 @@
 
                         <div class="flex justify-end mt-2">
                             @if (Route::has('password.request'))
-                            <a class="text-sm font-bold text-pink-600 underline hover:text-pink-900" href="{{ route('password.request') }}">
-                                {{ __('Forgot your password?') }}
-                            </a>
-                        @endif
+                                <a class="text-sm font-bold text-pink-600 underline hover:text-pink-900" href="{{ route('password.request') }}">
+                                    {{ __('Forgot your password?') }}
+                                </a>
+                            @endif
                         </div>
                         <div class="flex items-center justify-end mt-4">
 
@@ -85,11 +85,11 @@
             </div>
 
             <div>
-                <div class="flex-1 h-full overflow-hidden transform -skew-x-6 bg-pink-600">
+                <div class="flex-1 h-full ml-12 overflow-hidden transform -skew-x-6 bg-pink-600">
                     <div class="p-6">
                         <a href="{{ route('login')}}" class="text-lg font-bold text-center">login</a>
 
-                        <img src="{{asset('images/secure.svg')}}" class="mt-16" alt="logo">
+                        <img src="{{asset('images/secure.svg')}}" class="w-56 mt-16"  alt="logo">
                     </div>
                 </div>
             </div>

@@ -33,10 +33,12 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
+        $message = ['email.regex' => 'Please put a valid email'];
+
         $request->validate([
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users', 'regex:/gmail|ymail/'],
             'password' => ['required', 'min:8', 'confirmed',  Rules\Password::defaults()],
-        ]);
+        ], $message);
 
         $user = User::create([
             'email' => $request->email,

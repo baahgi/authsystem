@@ -110,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="">
+            <div >
                 <div class="flex-1 h-full ml-12 overflow-hidden transform -skew-x-6 bg-gray-800">
                     <div class="p-6">
                         <a href="{{ route('register')}}" class="text-lg font-bold text-center text-white">Sign up</a>
